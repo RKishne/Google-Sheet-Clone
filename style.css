@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 10fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+.root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block:10px ;
+}
+.header{ 
+     height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+}
+input[type="checkbox"],input[type="radio"]{
+    display: none;
+}
+
+input[type="color"]{
+    margin-inline: 0;
+    max-width: 0px;
+    max-height: 0px;
+    visibility: hidden;
+}
+input + label{
+    padding: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+input:checked + label{
+    background-color: #D3E2FD;
+}
+.farmula-bar{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50vw;
+    margin: auto;
+    
+}
+.left-section{
+    width: 50px;
+    border: 1px solid lightgray;
+    text-align: center;
+}
+input{
+    flex-grow: 1;  
+}
+.body{
+    width: 100vw;
+    height: 84vh;
+    margin-top: 20px;
+    overflow: scroll;
+    margin-top: 0;
+}
+.main-header{
+    display: flex;
+    width: fit-content;
+    position: sticky;
+    top: 0;
+    background-color: #D3E2FD;
+}
+.main-header .first-cell{
+    min-width: 30px;
+    height: fit-content;
+    text-align: center;
+    padding: 5px 2px;
+    border: 0.5px solid #C4C7C5;
+}
+.main-header .cell{
+    min-width: 150px;
+    text-align: center;
+    padding: 5px 2px;
+    border: 0.5px solid #C4C7C5;
+    font-size: 0.8rem;
+    width: fit-content;
+}
+.main-body{
+    display: flex;
+    width: fit-content;
+}
+.sno-container{
+    position: sticky;
+    left: 0;
+    background-color: #D3E2FD;
+}
+.sno-container .sno{
+    min-width: 30px;
+    max-width: 30px;
+    border: 0.5px solid #C4C7C5;
+    height: 1.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rows-container{ 
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+}
+.row .cell {
+    border: 0.5px solid #C4C7C5;
+    min-width: 150px;
+    min-height: 1.5rem;
+}
+.foot-form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.foot-input{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: larger;
+}
+.foot-form input:checked + label {
+    background-color: green !important;
+    color: white;
+}

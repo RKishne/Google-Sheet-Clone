@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google sheet Clone</title>
+    <link rel="shortcut icon" href="https://tse3.mm.bing.net/th?id=OIP.5F6aQJEFJFOq0qH9fjgDDAHaHa&pid=Api&P=0&h=180" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="root">
+
+        <div class="header">
+            <form>
+                <select id="fontFamily">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Monospace">Monospace</option>
+                </select>
+                <select id="fontSize">
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                </select>
+        
+                <input type="checkbox" value="bold" id="bold" name="bold">
+                <label for="bold"><i class="fa-solid fa-bold"></i></label>
+    
+                <input type="checkbox" value="italic" id="italic" name="italic">
+                <label for="italic"><i class="fa-solid fa-italic"></i></label>
+    
+                <input type="checkbox" value="underline" id="underline" name="underline">
+                <label for="underline"><i class="fa-solid fa-underline"></i></label>
+        
+                <input type="radio" value="left" id="align-left" name="align">
+                <label for="align-left"><i class="fa-solid fa-align-left"></i></label>
+    
+                <input type="radio" value="center" id="align-center" name="align">
+                <label for="align-center"><i class="fa-solid fa-align-center"></i></label> 
+                
+                <input type="radio" value="right" id="align-right" name="align">
+                <label for="align-right"><i class="fa-solid fa-align-right"></i></label>  
+        
+                <input type="color" value="#000000" id="textColor" name="textColor">
+                <label for="textColor" ><i class="fa-solid fa-paintbrush"></i></label> 
+        
+                <input type="color" value="#ffffff" id="bgcolor" name="bgColor">
+                <label for="bgcolor"><i class="fa-solid fa-fill-drip"></i></label>
+            </form>
+        </div>
+        <div class="farmula-bar">
+            <div class="left-section">NA</div>
+            <label for="fx">f(x)</label>
+            <input type="text" name="fx" id="fx" />
+        </div>
+    </div>
+    <div class="body">
+        <div class="main-header"></div>
+        <div class="main-body">
+            <div class="sno-container"></div>
+            <div class="rows-container"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <form class="foot-form">
+            <button type="button" onclick="createNewSheet()"><i class="fa-solid fa-plus"></i></button>
+            <input type="radio" name="sheet" id="sheet1" value="sheet1" checked>
+            <label for="sheet1" class="foot-input">Sheet1</label>     
+        </form>
+    </div>
+    <script src="data-flow.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
